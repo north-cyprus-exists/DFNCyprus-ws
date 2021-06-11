@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .header {
+    padding: 0 60px;
+    font-size: 20px;
+    background-color: #B71C1C;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+ .nav {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+  }
+
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav a:hover {
+    color: #000000;
+  }
+  
+  
+  
+  .nav li {
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  }
+
+
+  .searchbox:hover > .searchtext{
+    width: 150px;
+  }
+
+
+  .searchbutton{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+
+  .searchtext{
+    border:none;
+    background: #fff;
+    outline: none;
+    float: left;
+    padding: 0;
+    transition: 0.4s;
+    width: 0px;
+    line-height: 1.6;
+    
+  }
+
+/* Dropdown button */
+  .nav .dropdown .dropbtn{
+    padding: 0px 0px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #fff;
+    background-color: #B71C1C;
+    border: none;
+    outline: none;
+    display: inline-flex;
+  }
+
+ 
+
+
+/* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B71C1C;
+    line-height: 25px;
+  }
+
+/* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+/* footer */
+
+  /* .footercontact {
+    padding: 45px 0px;
+    background-color: #B71C1C;
+    color: #fff;
+    font-size: .8rem;
+    text-align:center;
+  } */
+
+  .footer p {
+    margin: auto;
+  }
+
+  .footer {
+    font-size: 12px;
+    background-color: #B71C1C;
+    color: #fff;
+    text-align: center;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    
+  }
+
+  .footerlist {
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+  }
+
+
+  .mainbody {
+    background-color: #fff;
+    padding: 60px 60px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mainbody-inner {
+    max-width: 760px;
+  }
+  
+  .mainbody h1 {
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .mainbody p {
+    font-size: 1.18rem;
+    line-height: 1.6;
+  }
+  
+  .mainbody-button {
+    background-color: #D50000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 45px;
+    border-radius: 8px;
+    font-size: 1.18rem;
+    display: inline-block;
+  }
+
+  .readmore-button {
+    background-color: #D50000;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .mainbodycontent {
+    padding: 60px 60px;
+  }
+  
+  .mainbodycontent-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+
+  }
+
+  .mainbodycontent-inner a {
+  text-decoration: none;
+}
+  
+  .mainbodycontent-item h3 {
+    color: #283593;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .mainbodycontent-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+
+ 
+/* latest news */
+
+  .latestnewscontent {
+    padding: 60px 150px;
+    
+  }
+  .latestnewscontent-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 45px;
+
+  }
+
+  .latestnewscontent-inner a {
+  text-decoration: none;
+  }
+
+    
+
+  .latestnewscontent-item h3 {
+    color: #283593;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .latestnewscontent-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    width: 250px;
+
+  }
+
+  /* Actiondirectflights.html */
+  .formflightstitle {
+    font-size: 18px;
+    padding: 0.2px 45px;
+    display: flex;
+    background-color: #B71C1C;
+    color: #fff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.formflightsform {
+
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+  flex-wrap: wrap;
+  }
+
+  .formflightsform {
+    padding: 20px 45px;
+  }
+
+  .formflightsform input{
+    margin: 15px 0px 15px 0px;
+    width: 250px;
+  }
+
+
+.formflightsform label {
+  display: inline-block;
+    width:120px;
+    text-align: left
+  }
+
+
+.formflightsform button {
+  margin: 10px 120px;
+  background-color: #D50000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 250px;
+    height: 30px;
+  }
+
+ /* APPGTRNC.html */
+  .ParliamentPictures {
+    padding: 1px 150px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ParliamentPictures p {
+    text-align: center;
+  }
