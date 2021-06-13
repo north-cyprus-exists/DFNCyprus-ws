@@ -29,6 +29,9 @@ function mpcall(){
             document.getElementById("mpconstit").value = ""
              document.getElementById("mpname").value = ""
              document.getElementById("mpemail").value = ""
+             
+             
+
              var MP_img1 = '';
         $(".mpimg").attr("src",MP_img1);
             } 
@@ -37,6 +40,8 @@ function mpcall(){
                 document.getElementById("mpconstit").value = ""
                 document.getElementById("mpname").value = ""
                 document.getElementById("mpemail").value = ""
+                
+
                 var MP_img1 = '';
         $(".mpimg").attr("src",MP_img1);
             }
@@ -45,6 +50,7 @@ function mpcall(){
             document.getElementById("mpconstit").value = ""
             document.getElementById("mpname").value = ""
             document.getElementById("mpemail").value = ""
+          
             var MP_img1 = '';
         $(".mpimg").attr("src",MP_img1);
             }
@@ -87,11 +93,11 @@ function mpcall(){
             "In practice, this has meant that travellers from the UK to the TRNC are required to leave the aircraft with all their personal belongings, pass through additional security, and reboard another aircraft, very often a great distance away from the point of disembarkation.   \n \n" + 
             "Disembarkation gates used to be typically 200 – 300 metres from security screening checkpoints and transit gates (in Turkey), however with the opening of the new international airport in Istanbul -this is now one of the largest Airports in the world- and with the pandemic and mixing of passengers this is most undesirable.   \n \n" + 
             "For those with young children, the frail and elderly, this causes incredible difficulties. Many first generation British Turkish Cypriots are now elderly and this ‘UK only’ requirement is perceived as discriminatory.   \n \n" + 
-            "The measure also results in: \n" + 
-            "Significant increase cost of travel (because of the additional service cost of flight change in Turkey). The average cost penalty for flying to Ercan is an increase in cost of 140%. \n" + 
-            "An additional 1.5 - 2 hours being added to travel time. Flying to Ercan takes at least 40% longer than flying to Larnaca Airport despite there being only 6 miles between them.  The average journey is 68% longer due to scheduling gaps in transit flights. \n" + 
-            "Discouraging British tourists from visiting the TRNC.  \n" + 
-            "Unnecessary an avoidable exposure to Covid for travellers to and from the UK, in requiring disembarkation in a ‘red’ high risk environment (Turkey unlike Cyprus is on the FCDO’s red list of countries). \n \n" + 
+            "The measure also results in: \n \n" + 
+            "\u2022 Significant increase cost of travel (because of the additional service cost of flight change in Turkey). The average cost penalty for flying to Ercan is an increase in cost of 140%. \n" + 
+            "\n \u2022 An additional 1.5 - 2 hours being added to travel time. Flying to Ercan takes at least 40% longer than flying to Larnaca Airport despite there being only 6 miles between them.  The average journey is 68% longer due to scheduling gaps in transit flights. \n" + 
+            "\n \u2022 Discouraging British tourists from visiting the TRNC.  \n" + 
+            "\n \u2022 Unnecessary and avoidable exposure to Covid for travellers to and from the UK, in requiring disembarkation in a ‘red’ high risk environment (Turkey unlike Cyprus is on the FCDO’s red list of countries). \n \n" + 
             "Since the UK is the only country to require disembarkation and additional security screening, there is a widely held belief that this decision is politically motivated. Because the UK have been unable to screen Ercan because the Republic of Cyprus have not allowed an inspection, I am saddened to think that the British Government has buckled under political pressure from the Republic of Cyprus and are colluding in the oppression of Turkish Cypriots and British citizens. This is abhorrent and entirely unacceptable. \n \n" + 
             "The advice of the transport minister in 2018, was to have a recognised UK company to inspect the Airport and act on its recommendations, this was done. \n \n" + 
             "This is further born out in the experience of travellers to the TRNC last year during the Covid lockdown. I have been disappointed and shocked to learn that even during the first Covid lock down in 2020, the UK refused to allow humanitarian rescue flights on a 'touchdown' basis, while the German Government sent seven aircraft on a 'humanitarian' mission to repatriate over 700 European citizens, all on a ‘touchdown' only basis. You will recall that the Turkish Government had an international lockdown in place, non-Turkish citizens were not permitted to disembark aircraft, because of this disembarkation and security screening were not possible. In the process, hundreds of British citizens were left stranded for weeks, not being able to return home. \n \n" + 
@@ -103,7 +109,6 @@ function mpcall(){
             "Failure to act could see the FCDO and DfT become inadvertently complicit in barring British Turkish Cypriots from being able to return to their cultural homeland. There is no question that this would be considered overt and deliberate discrimination. I feel strongly that a review of the 2017 D/SS measures are well overdue and call on you to make this petition on behalf of myself and my wider community. \n \n" + 
             "Could I ask that you convene a meeting on my behalf, so that you can be assured from both departments that they are not deliberately acting in a discriminatory manner as that is how I perceive this. \n \n" + 
             "I look forward to hearing from you at the earliest opportunity. \n \n" + 
-            "\n \n" + 
             "Yours sincerely, \n" +
             Personame + "\n \n" +
             "Email: " + Personemail + "\n" +
@@ -124,6 +129,7 @@ function mpclear(){
     document.getElementById("mpconstit").value = '';
     document.getElementById("mpname").value = '';
     document.getElementById("mpemail").value = '';
+
     var MP_img1 = '';
     $(".mpimg").attr("src",MP_img1);
     document.getElementById("input1_1").value = 'Please fill the above out first.';

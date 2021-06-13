@@ -17,7 +17,7 @@ body {
  .nav {
     list-style: none;
     display: flex;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .nav a {
@@ -67,7 +67,7 @@ body {
 /* Dropdown button */
   .nav .dropdown .dropbtn{
     padding: 0px 0px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: inherit;
     color: #fff;
     background-color: #B71C1C;
@@ -304,9 +304,10 @@ body {
     flex-wrap: wrap;
   }
 
-  textarea {
-    resize:horizontal;
-  display: flex;
+  .input1_1 {
+     margin: 0px 0px 50px 0px; 
+     display: flex;
+    justify-content:space-between; 
  }
 
   .mpimg-div {
