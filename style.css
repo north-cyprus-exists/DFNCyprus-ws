@@ -283,7 +283,7 @@ body {
   }
 
 
-.formflightsform button {
+.formflightsform .buttonform {
   margin: 10px 120px;
   background-color: #D50000;
     color: #fff;
@@ -294,6 +294,33 @@ body {
     width: 250px;
     height: 30px;
   }
+ 
+  .formflightsMPInputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  textarea {
+    resize:horizontal;
+  display: flex;
+ }
+
+  .mpimg-div {
+    margin: 0px 120px;
+    display: flex;
+      border: 0px;
+      /* visibility: hidden; */
+    }
+
+    .mpimg {
+        width: 250px;
+        height: 250px;
+        border: 0px;
+      }
+
+
 
  /* APPGTRNC.html */
   .ParliamentPictures {
@@ -307,3 +334,4 @@ body {
   .ParliamentPictures p {
     text-align: center;
   }
+
