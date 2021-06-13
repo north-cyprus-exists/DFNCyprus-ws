@@ -246,7 +246,7 @@ body {
 
   /* Actiondirectflights.html */
   .formflightstitle {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.2px 20px;
     display: flex;
     background-color: #B71C1C;
@@ -271,14 +271,15 @@ body {
 
   .formflightsform input{
     margin: 15px 0px 15px 0px;
-    width: 250px;
+    width: 200px;
   }
 
 
 .formflightsform label {
   display: inline-block;
     width:120px;
-    text-align: left
+    text-align: left;
+    font-size: 14px;
   }
 
 
@@ -290,8 +291,10 @@ body {
     text-align: center;
     border-radius: 8px;
     font-size: 1rem;
-    width: 250px;
+    width: 200px;
     height: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
   }
  
   .formflightsMPInputs {
@@ -314,8 +317,8 @@ body {
     }
 
     .mpimg {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         border: 0px;
       }
 
