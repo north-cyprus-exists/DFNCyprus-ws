@@ -4,12 +4,12 @@ body {
   }
   
   .header {
-    padding: 0 60px;
+    padding: 0 20px;
     font-size: 20px;
     background-color: #B71C1C;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -33,8 +33,7 @@ body {
   
   
   .nav li {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
     
   }
 
@@ -134,7 +133,7 @@ body {
 
   .mainbody {
     background-color: #fff;
-    padding: 60px 60px;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
   }
@@ -248,7 +247,7 @@ body {
   /* Actiondirectflights.html */
   .formflightstitle {
     font-size: 18px;
-    padding: 0.2px 45px;
+    padding: 0.2px 20px;
     display: flex;
     background-color: #B71C1C;
     color: #fff;
@@ -261,13 +260,13 @@ body {
 .formflightsform {
 
   display: flex;
-  justify-content: space-between;
-    align-items: center;
+  justify-content: left;
+    align-items:baseline;
   flex-wrap: wrap;
   }
 
   .formflightsform {
-    padding: 20px 45px;
+    padding: 20px 20px;
   }
 
   .formflightsform input{

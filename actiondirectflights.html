@@ -68,9 +68,9 @@
 
 <div class="mainbody">
   <div class="mainbody-inner">
-    <h1>Ask your MP to support Direct Flights to North Cyprus</h1>
+    <h1>Ask your MP to support the lifting of disembarkation and security screening in Turkey for flights between the UK and the TRNC.</h1>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sed quod! Voluptate eaque illo consectetur earum laudantium maiores impedit aspernatur, totam ut iste labore itaque ullam ipsum odit id tenetur.</p>
+<p>We have made it easy for you to send an email to your MP in less than 20 seconds. Give it a go now.</p>
   </div>
 </div>
 
@@ -105,19 +105,27 @@
         </div>
       
         <div>
+          <label for="firstline">Firstline</label>
+          <input type="text" name="firstline" id="firstline" placeholder="First line of your address" required>
+        </div>
+
+
+        <div>
           <label for="postcode">Postcode</label>
           <input type="text" name="postcode" id="postcode" placeholder="Your postcode" maxlength="9" required>
         </div>
         
+        
         <div>
           <input class="buttonform" type="button" name="submit" value="Lookup MP" id="lookupbutton" onclick="mpcall();"/><br>
-          <input class="buttonform" type="reset" name="clear" value="Clear details" id="clearbutton"/>
+          <input class="buttonform" type="reset" name="clear" value="Clear details" id="clearbutton" onclick="mpclear()"/>
           
         </div>
     
       </form>
     </div>
 
+  
   
  </div>
 
@@ -168,7 +176,7 @@
   </form>
 
   <span id='input1_0'></span>
-  <textarea name="input1_1" id="input1_1" cols="80" rows="30">Please fill the above out first.</textarea>
+  <textarea name="input1_1" id="input1_1" cols="80" rows="30" readonly>Please fill the above out first.</textarea>
 
 
   </div>
