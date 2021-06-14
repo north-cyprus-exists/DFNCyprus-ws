@@ -139,7 +139,7 @@ body {
   }
   
   .mainbody-inner {
-    max-width: 760px;
+    max-width: 900px;
   }
   
   .mainbody h1 {
@@ -245,6 +245,8 @@ body {
   }
 
   /* Actiondirectflights.html */
+
+  
   .formflightstitle {
     font-size: 16px;
     padding: 0.2px 20px;
@@ -257,16 +259,14 @@ body {
     flex-wrap: wrap;
   }
 
+
 .formflightsform {
 
   display: flex;
   justify-content: left;
     align-items:baseline;
   flex-wrap: wrap;
-  }
-
-  .formflightsform {
-    padding: 20px 20px;
+  padding: 20px 20px;
   }
 
   .formflightsform input{
@@ -282,6 +282,7 @@ body {
     font-size: 14px;
   }
 
+  
 
 .formflightsform .buttonform {
   margin: 10px 120px;
@@ -323,6 +324,27 @@ body {
         border: 0px;
       }
 
+   
+
+      .choice-radio input{ 
+        width: 15px;
+        height: 15px;
+        margin-left: 120px !important;
+        padding: 0px;
+        margin: 0;
+        vertical-align: bottom;
+        position: relative;
+        top: -1px;
+              
+      }
+      
+      
+      .choice-radio label{
+        display: inline;
+        padding-left: 0px;
+        text-indent: -15px;
+      }
+      
 
 
  /* APPGTRNC.html */

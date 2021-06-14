@@ -8,14 +8,23 @@ function mpcall(){
     var Personame = document.getElementById("name").value;
     var Personemail = document.getElementById("email").value;
     var Personfirstline = document.getElementById("firstline").value;
+    
 
     if(Personame.length ==0 && Personame.length ==0 && SearchPostcode.length ==0 && Personfirstline.length ==0){
         window.alert("You did not enter any details. Please enter your name, email, first line of your address and postcode before looking up your MP.");
         document.getElementById("mpconstit").value = ""
+             document.getElementById("mpname").value = ""
+             document.getElementById("mpemail").value = ""
+             var MP_img1 = '';
+        $(".mpimg").attr("src",MP_img1);
     } 
     else if(Personame.length ==0 || Personame.length ==0 || SearchPostcode.length ==0 || Personfirstline.length ==0){
         window.alert("You did not enter all your details. Please enter your name, email, first line of your address and postcode before looking up your MP.");
         document.getElementById("mpconstit").value = ""
+             document.getElementById("mpname").value = ""
+             document.getElementById("mpemail").value = ""
+             var MP_img1 = '';
+        $(".mpimg").attr("src",MP_img1);
     } 
     else if(Personame.length > 0 && Personame.length > 0 && SearchPostcode.length > 0 && Personfirstline.length > 0) {$.getJSON(
     "https://members-api.parliament.uk/api/Location/Constituency/Search?searchText="+ SearchPostcode + "&skip=0&take=20", 
@@ -29,7 +38,6 @@ function mpcall(){
             document.getElementById("mpconstit").value = ""
              document.getElementById("mpname").value = ""
              document.getElementById("mpemail").value = ""
-             
              
 
              var MP_img1 = '';
@@ -77,10 +85,23 @@ function mpcall(){
             console.log(dataid);
 
             var MP_email1 = dataid.value[0].email;
-            
+            console.log(MP_email1);
+            if(MP_email1 == 0 || MP_email1 == null){var MP_email1 = dataid.value[1].email;}
 
             document.getElementById("mpemail").value = MP_email1;
             });
+
+            if (MP_name1 == "Bambos Charalambous" || MP_consistency1 == "Enfield, Southgate" ||
+            MP_name1 == "Theresa Villiers" || MP_consistency1 == "Chipping Barnet" || 
+            MP_name1 == "Sir Roger Gale" || MP_consistency1 == "North Thanet" || 
+            MP_name1 == "Mike Freer" || MP_consistency1 == "Finchley and Golders Green"){
+                let Letter = "Unfortunately, we aren't able to send a letter to the following MP.";
+
+                document.getElementById("input1_1").value = Letter;
+            }
+            else {
+
+            
 
             // Letter to MP
             let Letter = 
@@ -117,7 +138,7 @@ function mpcall(){
             document.getElementById("input1_1").value = Letter;
 
             var elmnt = document.getElementById("mpconstit");
-            elmnt.scrollIntoView();
+            elmnt.scrollIntoView();}
 
 
         };  
