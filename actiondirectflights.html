@@ -7,7 +7,8 @@
     <title>Direct Flights</title>
     <link rel="shortcut icon" type="image/png" href="images/Favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
 
@@ -127,15 +128,7 @@
     </div>
 
   
-  
  </div>
-
- <!-- <input type="button" class="gform_button button lookup-mp" value="Lookup MP">
- <input type="button" class="gform_button button start-again" value="Start again"> -->
-
-
- <!-- https://members-api.parliament.uk/api/Location/Constituency/Search?searchText= -->
- <!-- https://members-api.parliament.uk/api/Location/Constituency/Search?searchText=en1&skip=0&take=20 -->
 
   <div class="formflightstitle">
     <h4>
@@ -149,7 +142,7 @@
 
 
   <div class="formflightsMPInputs formflightsform">
-    <form action="actiondirectflights.php" method="POST">
+    <form id="myform" >
 
       <div class="mpimg-div">
         <img class="mpimg">
@@ -190,12 +183,12 @@
 
     <div>
       
-      <button class="buttonform" type="submit">Send Email</button>
+      <button class="buttonform" type="button" onclick="sendEmail()" >Send Email</button>
     </div>
   </form>
 
   <span id='input1_0'></span>
-  <textarea name="input1_1" id="input1_1" cols="90" rows="27" style="resize: none;" readonly>Please fill the above out first.</textarea>
+  <textarea id="input1_1" cols="90" rows="27" style="resize: none;" readonly>Please fill the above out first.</textarea>
 
 
   </div>
@@ -204,8 +197,48 @@
 
 </div>
 
+<script>
+  function sendEmail(){
+    console.log("sending...");
+    var name = $("#name");
+    var email = $("#email");
+    var body = $("#input1_1");
 
+    console.log(name);
+    console.log(email);
+    console.log(body);
+ 
+if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)){
+  console.log("passed condition...");  
+      $.ajax({
+        url:'actiondirectflights.php',
+        method: 'POST',
+        dataType: 'json',
+        data: {
+          name: name.val(),
+          email: email.val(),
+          body: body.val(),
+        }, success: function(response){
+          if(response.status == "Success")
+            alert('Email has been sent!');
+          else {
+            alert('Please try again')
+            console.log(response);
+                }}
+      })
+  }
+}
 
+function isNotEmpty(caller){
+  if(caller.val() == ""){
+    caller.css('border','1px solid red');
+    return false;
+  } else
+    caller.css('border','');
+    return true;
+}
+
+</script>
 
 <!-- footer -->
 <div class="footer">
