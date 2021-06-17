@@ -151,7 +151,7 @@ function mpcall(){
 
             document.getElementById("input1_1").value = Letter;
 
-            var elmnt = document.getElementByClass("buttonform");
+            var elmnt = document.getElementById("mpconstit");
             elmnt.scrollIntoView();}
 
 
