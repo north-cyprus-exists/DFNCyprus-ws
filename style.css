@@ -221,7 +221,7 @@ body {
 
  .buttonform{
     
-    margin: 10px 100px;
+    margin: 5px 55px;
     text-decoration: none;
     text-align: center;
     border-radius: 0px;
@@ -244,9 +244,9 @@ body {
 
 
 .formflightsinputs input{
-    margin: 10px 20px 15px 20px;
+    margin: 10px 5px 15px 5px;
     padding: 10px;
-    width: 375px;
+    width: 300px;
     height: 40px;
     border-top: 0px solid black;
     border-left: 0px solid black;
@@ -266,8 +266,8 @@ body {
 
   .input1_1 {
     height: 580px;
-    width: 800px;
-     padding: 10px 10px; 
+    width: 900px;
+     padding: 10px 5px; 
      display: flex;
     justify-content:space-between; 
     font-family: inherit;
@@ -288,7 +288,7 @@ body {
 
 
   .mpimg-div {
-    margin: 10px 100px;
+    margin: 10px 60px;
     display: flex;
       border: 0px;
       /* visibility: hidden; */
@@ -305,17 +305,17 @@ body {
       }
 
       .checkboxterms .userterms{
-        padding-left: 20px;
+        padding-left: 5px;
         padding-top: 0px;
         display: block;
         flex-wrap: wrap;
-        width: 375px;
+        width: 300px;
         font:inherit;
         font-size: 12px;
       }
 
       .checkboxterms .checkboxbtnlbl{
-        padding: 0px 0px 0px 20px;
+        padding: 0px 0px 0px 5px;
         width: 300px;
         display: block;
         font-size: 12px;
