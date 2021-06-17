@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direct Flights</title>
+    <title>DFNCyprus</title>
     <link rel="shortcut icon" type="image/png" href="images/Favicon.png">
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
-
-
 </head>
 <body>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div class="header">
-  <h1>North Cyprus Exists</h1>
 
+<div class="header">
+  <img src="images/Favicon.png" alt="DFNCyprus">
+  <h1>DFNCyprus</h1>
+</div>
+
+
+<div class="subheader">
   <ul class="nav">
     <li><a href="index.html">Home</a></li>
-    <li><a href="latestnews.html">News</a></li>
+    <li><a href="news.html">News</a></li>
     <li>
       <div class="dropdown">
         <button class="dropbtn">Take Action</button>
         <div class="dropdown-content">
-          <a href="actiondirectflights.html">Contact your MP about Direct Flights</a>
-          <a href="tbc.html">Ask your MP to join the APPG for TRNC</a>
-          <a href="tbc.html">Contact your MP</a>
+          <a href="flights.html">Contact your MP about disembarkation in Turkey</a>
+          <a href="tbc.html">TBC</a>
+          <a href="tbc.html">TBC</a>
         </div>
       </div>
     </li>
@@ -38,8 +41,8 @@
       <div class="dropdown">
         <button class="dropbtn">Resources</button>
         <div class="dropdown-content">
-          <a href="tbc.html">Embargoes</a>
-          <a href="tbc.html">History</a>
+          <a href="tbc.html">TBC</a>
+          <a href="tbc.html">TBC</a>
           <a href="tbc.html">TBC</a>
         </div>
       </div>
@@ -48,30 +51,35 @@
       <div class="dropdown">
         <button class="dropbtn">Community</button>
         <div class="dropdown-content">
-          <a href="APPGTRNC.html">The APPG for TRNC</a>
-          <a href="tbc.html">Turkish Cypriot Groups</a>
+          <a href="tbc.html">Campaign supporters</a>
+          <a href="tbc.html">TBC</a>
         </div>
       </div>
     </li>
     <li>
-      <div class="searchbox">
-        <input class="searchtext" type="text" name="" placeholder="Type to search">
-        <a class="searchbutton" href="tbc.html">
-          <span class="material-icons">search</span>
-        </a>
-        
-      </div>
     </li>
   </ul>
 </div>
 <!-- 1.0 Header ends here! -->
 
 
+
 <div class="mainbody">
   <div class="mainbody-inner">
     <h1>Ask your MP to support the lifting of disembarkation and security screening in Turkey for flights between the UK and the TRNC.</h1>
 
-<p>Email your MP in less than 20 seconds, just fill out the inputs below. <br> Give it a go now.</p>
+
+<p>Email you Member of Parliament (MP) in 20 seconds! Just fill out your name, email, first line of your address & postcode and then we'll populate your letter to send off to your MP! Give it a go now. <br>
+  <br>
+  <b>Instructions</b> <br>
+  1. Fill out your details down below<br>
+  2. Click "Lookup MP" - We'll return the details of your MP for you<br>
+  3. Once ready, click "Send Email" - We'll send an email directly to your MP<br>
+  <br>
+  <b>Sign the UK Gov petition</b> <br>
+  If you haven't done so already, please sign the UK Gov petition calling for direct flights to North Cyprus found <a href="https://petition.parliament.uk/petitions/584228">here</a>
+
+</p>
   </div>
 </div>
 
@@ -91,36 +99,38 @@
   <div class="formflightsform">
     
     
-      <div class="formflightsinputs ">
+      <div class="formflightsinputsold">
       
-     <form action="#" name="formflightsinputs-personal">
+     <form name="formflightsinputs-personal">
   
+        <div class="formflightsinputs">
         <div>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Your full name" required>
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Full name" required>
         </div>
       
         <div>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Your email address" required>
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="E-mail" required>
         </div>
       
         <div>
-          <label for="firstline">Firstline</label>
+          <label for="firstline"></label>
           <input type="text" name="firstline" id="firstline" placeholder="First line of your address" required>
         </div>
 
 
         <div>
-          <label for="postcode">Postcode</label>
-          <input type="text" name="postcode" id="postcode" placeholder="Your postcode" minlength="6" maxlength="9" required>
+          <label for="postcode"></label>
+          <input type="text" name="postcode" id="postcode" placeholder="Postcode" minlength="6" maxlength="9" required>
+        </div>
         </div>
         
         
 
         <div>
-          <input class="buttonform" type="button" name="submit" value="Lookup MP" id="lookupbutton" onclick="mpcall();"/><br>
-          <input class="buttonform" type="reset" name="clear" value="Clear details" id="clearbutton" onclick="mpclear()"/>
+          <input class="buttonform" type="button" name="submit" value="Lookup MP" onclick="mpcall()"/><br>
+          <input class="buttonform" type="reset" name="clear" value="Clear details" onclick="mpclear()"/>
           
         </div>
     
@@ -130,9 +140,11 @@
   
  </div>
 
+
+
   <div class="formflightstitle">
     <h4>
-      Step 2. Your letter:
+      Step 2. Your MP & your letter:
     </h4>
     
   </div>
@@ -141,41 +153,37 @@
   
 
 
-  <div class="formflightsMPInputs formflightsform">
+  <div class="formflightsMPInputs formflightsinputs">
     <form id="myform" >
 
       <div class="mpimg-div">
-        <img class="mpimg">
+        <img class="mpimg" src="images/DFNCyprusLogo.JPG">
       </div>
 
     <div>
-      <label for="text">MP Constituency</label>
+      <label for="text"></label>
       <input type="text" name="mpconstit" id="mpconstit" placeholder="MP Constituency" readonly>
     </div>
 
     <div>
-      <label for="mpname">MP Name</label>
-      <input type="text" name="mpname" id="mpname" placeholder="MP name" readonly>
+      <label for="mpname"></label>
+      <input type="text" name="mpname" id="mpname" placeholder="MP Name" readonly>
     </div>
   
     <div>
-      <label for="mpemail">MP Email</label>
-      <input type="text" name="mpemail" id="mpemail" placeholder="MP email address" readonly>
+      <label for="mpemail"></label>
+      <input type="text" name="mpemail" id="mpemail" placeholder="MP E-mail address" readonly>
     </div>
   
     
-    <div class="choice-radio">
-      <label class="choice-radio-hr" for="userterms">Do you agree to us contacting you on future related issues? <br> 
-      If so please select 'Yes'.</label>
-      <br>
-      <br>
-      <label>
-        <input type="radio" name="choice-radio">
-        Yes
+    <div class="checkboxterms" required>
+      <label class="userterms" for="userterms">
+        From time to time, we may wish to contact you with follow up campaigns and other related issues. If you do not wish to hear from us, then you can opt out by ticking the option below or contacting us at any time.
       </label>
-      <label>
-        <input type="radio" name="choice-radio">
-        No
+      <br>
+      <br>
+      <label class="checkboxbtnlbl">
+        <input type="checkbox" name="checkboxbtn" class="checkboxbtn"> I do not wish to hear from you by email.
       </label>
       <br>
       <br>
@@ -188,7 +196,7 @@
   </form>
 
   <span id='input1_0'></span>
-  <textarea id="input1_1" cols="90" rows="27" style="resize: none;" readonly>Please fill the above out first.</textarea>
+  <textarea class="input1_1" id="input1_1" style="resize: none;" readonly>Your letter will be populated once you have supplied your information above.</textarea>
 
 
   </div>
@@ -203,30 +211,40 @@
     var name = $("#name");
     var email = $("#email");
     var body = $("#input1_1");
+    var mpname = $("#mpname");
+    var mpemail = $("#mpemail");
 
     console.log(name);
     console.log(email);
     console.log(body);
+ if(mpname.val()== "Bambos Charalambous" || 
+ mpname.val() == "Theresa Villiers" ||
+ mpname.val() == "Sir Roger Gale" ||
+ mpname.val() == "Mike Freer"){
+   alert("Sorry, an email cannot be sent to this MP.");
+ }
  
-if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)){
-  console.log("passed condition...");  
+ else if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body) && isNotEmpty(mpname) && isNotEmpty(mpemail)){
+  console.log("passed condition...");
       $.ajax({
-        url:'actiondirectflights.php',
+        url:'flights.php',
         method: 'POST',
         dataType: 'json',
         data: {
           name: name.val(),
           email: email.val(),
-          body: body.val(),
-        }, success: function(response){
-          if(response.status == "Success")
-            alert('Email has been sent!');
+          body: body.val()}, 
+          success: function(response){
+          if(response == "success")
+            alert('Email is sent!') ;
           else {
-            alert('Please try again')
-            console.log(response);
-                }}
-      })
+            alert('Please try again');
+                }
+              }               
+                
+      }) 
   }
+  
 }
 
 function isNotEmpty(caller){
@@ -240,6 +258,8 @@ function isNotEmpty(caller){
 
 </script>
 
+
+
 <!-- footer -->
 <div class="footer">
   <br>
@@ -252,7 +272,7 @@ function isNotEmpty(caller){
     <p>&nbsp;|&nbsp;</p>
     <a href="tbc.html">CONTACT US</a>
   </ul>
-  <p>&copy; 2021 North Cyprus Exists</p>
+  <p>&copy; 2021 DFNCyprus</p>
   <br>
 </div>
 </body>

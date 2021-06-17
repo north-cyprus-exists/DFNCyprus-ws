@@ -1,8 +1,8 @@
 
 
-function mpcall(){
 
-    
+function mpcall(){ 
+
 
     var SearchPostcode = document.getElementById("postcode").value;
     var Personame = document.getElementById("name").value;
@@ -15,7 +15,7 @@ function mpcall(){
         document.getElementById("mpconstit").value = ""
              document.getElementById("mpname").value = ""
              document.getElementById("mpemail").value = ""
-             var MP_img1 = '';
+             var MP_img1 = 'images/DFNCyprusLogo.JPG';
         $(".mpimg").attr("src",MP_img1);
     } 
     else if(Personame.length ==0 || Personame.length ==0 || SearchPostcode.length ==0 || Personfirstline.length ==0){
@@ -23,7 +23,7 @@ function mpcall(){
         document.getElementById("mpconstit").value = ""
              document.getElementById("mpname").value = ""
              document.getElementById("mpemail").value = ""
-             var MP_img1 = '';
+             var MP_img1 = 'images/DFNCyprusLogo.JPG';
         $(".mpimg").attr("src",MP_img1);
     } 
     else if(Personame.length > 0 && Personame.length > 0 && SearchPostcode.length > 0 && Personfirstline.length > 0) {$.getJSON(
@@ -40,7 +40,7 @@ function mpcall(){
              document.getElementById("mpemail").value = ""
              
 
-             var MP_img1 = '';
+             var MP_img1 = 'images/DFNCyprusLogo.JPG';
         $(".mpimg").attr("src",MP_img1);
             } 
             else if (MP_TotalResults > 1){
@@ -50,7 +50,7 @@ function mpcall(){
                 document.getElementById("mpemail").value = ""
                 
 
-                var MP_img1 = '';
+                var MP_img1 = 'images/DFNCyprusLogo.JPG';
         $(".mpimg").attr("src",MP_img1);
             }
             else if (MP_TotalResults == 0){
@@ -59,7 +59,7 @@ function mpcall(){
             document.getElementById("mpname").value = ""
             document.getElementById("mpemail").value = ""
           
-            var MP_img1 = '';
+            var MP_img1 = 'images/DFNCyprusLogo.JPG';
         $(".mpimg").attr("src",MP_img1);
             }
             else if (MP_TotalResults = 1) {
@@ -94,9 +94,22 @@ function mpcall(){
             if (MP_name1 == "Bambos Charalambous" || MP_consistency1 == "Enfield, Southgate" ||
             MP_name1 == "Theresa Villiers" || MP_consistency1 == "Chipping Barnet" || 
             MP_name1 == "Sir Roger Gale" || MP_consistency1 == "North Thanet" || 
+            MP_name1 == "Jeremy Corbyn" || MP_consistency1 == "Islington North" || 
+            MP_name1 == "Fabian Hamilton" || MP_consistency1 == "Leeds North East" ||
+            MP_name1 == "Catherine West" || MP_consistency1 == "Hornsey and Wood Green" || 
             MP_name1 == "Mike Freer" || MP_consistency1 == "Finchley and Golders Green"){
-                let Letter = "Unfortunately, we aren't able to send a letter to the following MP.";
-
+                let Letter = "Thank you for your interest in our campaign. \n \n" +
+                "Unfortunately, this particular letter isn't being sent to MP's who have actively and openly campaigned against Turkish Cypriot rights. We are sad to report that Your MP is one such MP. \n \n" + 
+                "We will be preparing other communications focused on challenging discrimination against Turkish Cypriots in the U.K. which will be relevant to all MP's. \n \n" + 
+                "We will be in touch again, shortly, thanks again for your support. \n \n" +
+                "MP's who actively campaign against Turkish Cypriot rights, excluded from this campaign: \n" + 
+                "\n \u2022 Sir Roger Gale MP for North Thanet," + 
+                "\n \u2022 Theresa Villiers MP for Chipping Barnet," + 
+                "\n \u2022 Mike Freer MP for Finchley and Golders Green," +  
+                "\n \u2022 Jeremy Corbyn MP for Islington North," + 
+                "\n \u2022 Fabian Hamilton MP for Leeds North East," + 
+                "\n \u2022 Bambos Charalambos MP for Enfield, Southgate," + 
+                "\n \u2022 Catherine West MP for Hornsey and Wood Green.";
                 document.getElementById("input1_1").value = Letter;
             }
             else {
@@ -133,6 +146,7 @@ function mpcall(){
             "Yours sincerely, \n" +
             Personame + "\n \n" +
             "Email: " + Personemail + "\n" +
+            "CC: DFNCyprus@gmail.com \n" +
             "Address: " + Personfirstline + ", " + SearchPostcode.toUpperCase();
 
             document.getElementById("input1_1").value = Letter;
@@ -151,7 +165,7 @@ function mpclear(){
     document.getElementById("mpname").value = '';
     document.getElementById("mpemail").value = '';
 
-    var MP_img1 = '';
+    var MP_img1 = 'images/DFNCyprusLogo.JPG';
     $(".mpimg").attr("src",MP_img1);
     document.getElementById("input1_1").value = 'Please fill the above out first.';
 };
