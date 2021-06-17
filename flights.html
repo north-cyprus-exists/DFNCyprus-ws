@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
 
 <div class="header">
   <img src="images/Favicon.png" alt="DFNCyprus">
@@ -37,7 +38,7 @@
         </div>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <div class="dropdown">
         <button class="dropbtn">Resources</button>
         <div class="dropdown-content">
@@ -46,7 +47,7 @@
           <a href="tbc.html">TBC</a>
         </div>
       </div>
-    </li>
+    </li> -->
     <li>
       <div class="dropdown">
         <button class="dropbtn">Community</button>
@@ -61,6 +62,7 @@
   </ul>
 </div>
 <!-- 1.0 Header ends here! -->
+
 
 
 
@@ -221,7 +223,7 @@
  mpname.val() == "Theresa Villiers" ||
  mpname.val() == "Sir Roger Gale" ||
  mpname.val() == "Mike Freer"){
-   alert("Sorry, an email cannot be sent to this MP.");
+   alert("E-mail not sent, sorry an e-mail cannot be sent to this MP.");
  }
  
  else if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body) && isNotEmpty(mpname) && isNotEmpty(mpemail)){
@@ -236,14 +238,13 @@
           body: body.val()}, 
           success: function(response){
           if(response == "success")
-            alert('Email is sent!') ;
+            alert('Email sent!') ;
           else {
             alert('Please try again');
                 }
-              }               
-                
+              }                      
       }) 
-  }
+  alert("E-mail sent, thank you for supporting our campaign.");  }
   
 }
 
@@ -259,9 +260,8 @@ function isNotEmpty(caller){
 </script>
 
 
-
 <!-- footer -->
-<div class="footer">
+<!-- <div class="footer">
   <br>
   <ul class="footerlist">
     <a href="tbc.html">ABOUT US</a>
@@ -275,5 +275,15 @@ function isNotEmpty(caller){
   <p>&copy; 2021 DFNCyprus</p>
   <br>
 </div>
+</body>
+</html> -->
+
+<!-- footer -->
+<div class="footer">
+<br>
+  <p>&copy; 2021 DFNCyprus</p>
+  <br>
+</div>
+
 </body>
 </html>

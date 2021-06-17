@@ -102,7 +102,7 @@ function mpcall(){
                 "Unfortunately, this particular letter isn't being sent to MP's who have actively and openly campaigned against Turkish Cypriot rights. We are sad to report that Your MP is one such MP. \n \n" + 
                 "We will be preparing other communications focused on challenging discrimination against Turkish Cypriots in the U.K. which will be relevant to all MP's. \n \n" + 
                 "We will be in touch again, shortly, thanks again for your support. \n \n" +
-                "MP's who actively campaign against Turkish Cypriot rights, excluded from this campaign: \n" + 
+                "MP's who actively campaign against Turkish Cypriot rights, excluded from this campaign, are: \n" + 
                 "\n \u2022 Sir Roger Gale MP for North Thanet," + 
                 "\n \u2022 Theresa Villiers MP for Chipping Barnet," + 
                 "\n \u2022 Mike Freer MP for Finchley and Golders Green," +  
@@ -152,7 +152,9 @@ function mpcall(){
             document.getElementById("input1_1").value = Letter;
 
             var elmnt = document.getElementById("mpconstit");
-            elmnt.scrollIntoView();}
+            elmnt.scrollIntoView();
+            
+            }
 
 
         };  
