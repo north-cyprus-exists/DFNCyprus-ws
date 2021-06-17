@@ -78,23 +78,19 @@ body {
 
 /* footer */
 
-  /* .footercontact {
-    padding: 45px 0px;
-    background-color: #B71C1C;
-    color: #fff;
-    font-size: .8rem;
-    text-align:center;
-  } */
 
-  .footer p {
-    margin: auto;
-  }
+
 
   .footer {
+    padding-top: 20px;
     font-size: 12px;
     background-color: #cc0000;
     color: #fff;
     text-align: center;
+  }
+
+    .footer p {
+    margin: auto;
   }
 
   .footer a {
